@@ -1,0 +1,93 @@
+*{
+    background-color: rgb(242, 250, 250);
+    margin: 10px 10px 10px 10px;
+}
+
+
+
+.year{
+    color:#008AD8;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+
+.financial{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dot-green{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(7, 184, 90);
+    border-radius: 50%;
+    margin-bottom: 50px;
+    
+    
+}
+
+.timeline-card{
+    width: 250px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: white;
+    padding: auto 40px;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.context{
+    padding: 20px;
+    background-color: white;
+}
+
+
+.dot-blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    background-color: #008AD8;
+    border-radius: 50%;
+    margin-bottom: 60px;
+    
+    
+}
+
+.financial {
+    position: relative;
+}
+
+.financial::before {
+    content: "";
+    position: absolute;
+    top: 18px;              
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(
+        to right,
+        #008AD8,
+        #00B58A
+    );
+   margin-top: 100px;
+}
+
+.card {
+    position: relative;
+    z-index: 1; 
+}
